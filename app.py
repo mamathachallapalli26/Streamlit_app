@@ -463,7 +463,7 @@ def show_chart(
 
     st.plotly_chart(
         fig,
-        use_container_width=True,
+        width="stretch",
         config={
             "displayModeBar": False
         }
@@ -751,7 +751,7 @@ elif page == "📊 Know Your Data":
 
     st.dataframe(
         df.head(10),
-        use_container_width=True
+        width="stretch"
     )
 
     st.markdown(
@@ -802,7 +802,7 @@ elif page == "📊 Know Your Data":
 
     st.dataframe(
         info,
-        use_container_width=True,
+        width="stretch",
         height=450
     )
 
@@ -862,7 +862,7 @@ elif page == "📊 Know Your Data":
         df.describe(
             include="all"
         ).transpose(),
-        use_container_width=True
+        width="stretch"
     )
 
     st.markdown(
